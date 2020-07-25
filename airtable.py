@@ -43,7 +43,7 @@ def main():
 
 
 def test():
-    with open(OUTPUT_PATH, "w) as f:
+    with open(OUTPUT_PATH, "w") as f:
         json.dump([], f, indent=2, sort_keys=True) 
 
 
