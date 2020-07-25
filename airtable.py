@@ -4,9 +4,9 @@ from airtable import Airtable
 import json
 import os
 
-VIEW_NAME = "^^dont_change_news_name"
-TABLE_NAME = "news"
-OUTPUT_PATH = "../assets/data/medialist.json"
+VIEW_NAME = "to_update"
+TABLE_NAME = "content"
+OUTPUT_PATH = "./data/medialist.json"
 
 def valid_entry(entry):
 
@@ -42,5 +42,10 @@ def main():
         json.dump(media_list, f, indent=2, sort_keys=True)
 
 
+def test():
+    with open(OUTPUT_PATH, "w) as f:
+        json.dump([], f, indent=2, sort_keys=True) 
+
+
 if __name__ == "__main__":
-    main()
+    test()
