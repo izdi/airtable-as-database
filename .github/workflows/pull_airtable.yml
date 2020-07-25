@@ -24,8 +24,8 @@ jobs:
           AIRTABLE_API_KEY: ${{ secrets.AIRTABLE_API_KEY }}
         run: |
           pip3 install airtable-python-wrapper > /dev/null
-          chmod +x airtable.py
-          ./airtable.py
+          chmod +x pull_airtable.py
+          ./pull_airtable.py
           
       - name: Create pull request
         uses: peter-evans/create-pull-request@v3        
