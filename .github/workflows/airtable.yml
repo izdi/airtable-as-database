@@ -28,7 +28,7 @@ jobs:
           ./airtable.py
           
       - name: Create pull request
-        uses: jcolla-holla/create-pull-request@v2        
+        uses: peter-evans/create-pull-request@v3        
         with:
           commit-message: "auto-add from Airtable"
           title: "Airtable GitHub action -- Update News"
