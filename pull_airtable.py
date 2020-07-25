@@ -6,7 +6,7 @@ import os
 
 VIEW_NAME = "to_update"
 TABLE_NAME = "content"
-OUTPUT_PATH = "./data/medialist.json"
+OUTPUT_PATH = "./medialist.json"
 
 def valid_entry(entry):
 
