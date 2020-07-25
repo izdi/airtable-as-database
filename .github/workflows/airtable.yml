@@ -26,3 +26,10 @@ jobs:
           pip3 install airtable-python-wrapper
           chmod +x airtable.py
           ./airtable.py
+          
+      - name: Create pull request
+        uses: jcolla-holla/create-pull-request@v2        
+        with:
+          commit-message: "auto-add from Airtable"
+          title: "Airtable GitHub action -- Update News"
+          body: "Updates to News from Airtable"
