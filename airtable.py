@@ -21,7 +21,7 @@ def main():
     try:
         # these keys will need to be set up in your Github repo as secrets
         airtable = Airtable(
-            os.environ["AIRTABLE_NEWS_BASE_KEY"],
+            os.environ["AIRTABLE_CONTENT_BASE_KEY"],
             TABLE_NAME,
             api_key=os.environ["AIRTABLE_API_KEY"],
         )
